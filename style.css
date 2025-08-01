@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: beige;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.header{
+    background-color: aquamarine;
+}
+
+#mainheading{
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 90px;
+    font-weight: 900;
+
+}
+
+
+#desc{
+    max-width: 250px;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.cardscontainer{
+    margin: 5rem 5rem;
+    border: 5px solid rgb(235, 202, 137);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    /* height: 1100px; */
+    border-radius: 20px;
+    
+    
+    
+    
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid  rgba(68, 62, 62, 0.178);
+    object-fit: cover;
+    object-position: center;
+      background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  /* overflow: hidden; */
+  max-height: 700px;
+  box-shadow: 20px 20px 8px rgba(93, 164, 28, 0.491);
+  
+
+    
+    
+}
+
+.cards:hover .pic{
+    transform: scale(1.05);
+    transition: all 1s linear 0s ;
+
+}
+
+.cardtitle:hover a{
+    color: rgb(46, 210, 224);
+}
+
+
+/* .pic{
+    margin: 4rem auto;
+} */
+
+.pic{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: contain;
+    max-height: 220px;
+}
+
+.picdesc{
+    margin: 2rem 0rem;
+}
+
+.options{
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#downloadlogo{
+    border: 4px solid rgb(254, 204, 132);
+    border-radius: 360px;
+     height: 80px;
+    width: 80px;
+}
+
+
+
+#whatsapplogo{
+    border: 4px solid rgb(254, 204, 132);
+    border-radius: 360px;
+    height: 80px;
+    width: 80px;
+     transform: scale(1.1);
+    transition: all 1s linear;
+}
+.statusbutton{
+    border: 5px solid greenyellow;
+    border-radius: 90px;
+    padding: 20px;
+    background: linear-gradient(45deg, #6dd5fa, #2980b9);
+  
+}
+
+.downloadbutton{
+    border: 5px solid greenyellow;
+    border-radius: 90px;
+    padding: 20px;
+    background: linear-gradient(45deg, #6dd5fa, #2980b9);
+
+}
+
+.statusbutton:hover {
+    transform: scale(1.1);
+    transition: all 0.3 ease;
+}
+
+.downloadbutton:hover {
+    transform: scale(1.1);
+    transition: all 0.3 ease;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cardscontainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+.cards:hover {
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+
