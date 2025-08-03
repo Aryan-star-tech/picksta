@@ -45,6 +45,14 @@ body {
     display: flex;
     gap: 2.5rem;
     margin-top: 1rem;
+    font-weight: 600;
+    font-size: large;
+    
+}
+
+.nav-item{
+    color: rgba(101, 116, 116, 0.71);
+
 }
 
 .box3{
@@ -55,6 +63,7 @@ body {
     background-color: #c179ff;
     border-radius: 15px;
     width: 7rem;
+    height: 2.4rem;
     margin: 0.3rem 2rem;
     color: rgb(255, 240, 240);
     font-size: larger;
@@ -67,7 +76,7 @@ body {
 }
 
 .nav-item:hover {
-    color: rgb(81, 81, 243);
+    color: rgba(198, 164, 92, 0.879);
 
 }
 
@@ -130,6 +139,107 @@ body {
     display: block; /* ✅ Now it appears in mobile */
   }
 }
+
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.hero-box1{
+    font-weight: 550;
+    border: 2px solid rgb(250, 164, 66);
+    width: 14rem;
+    height: 2.5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    border-radius: 2rem;
+    background-color: orange;
+    color: azure;
+}
+
+.hero-box2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.cards-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 50vw;
+    justify-items: center;
+    margin: 6rem auto;
+    gap: 1rem;
+       
+
+}
+
+.card{
+    padding: 2rem;
+    overflow: hidden;
+    
+       
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3rem;
+
+}
+
+@media (max-width:960px) {
+    .cards-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100vw;
+    justify-items: center;
+    margin: 3rem auto;
+    gap: 0;
+       
+
+}
+
+.card{
+    padding: 1rem;
+    overflow: hidden;
+    
+       
+}
+    
+    
+}
+
+@media (max-width:355px) {
+    .cards-section{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100vw;
+    justify-items: center;
+    margin: 3rem auto;
+    gap: 0;
+       
+
+}
+
+.card{
+    padding: 1rem;
+    overflow: hidden;
+    
+       
+}
+    
+    
+}
+
+
+
 
 
 
