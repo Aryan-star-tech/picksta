@@ -110,6 +110,16 @@ body {
     }
 
 
+    .overlay {
+  position: absolute; /* Position it on top of the image */
+  top: 10px;
+  right: 10px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Fade in smoothly */
+}
+
+
+
    
     
 }
@@ -180,6 +190,7 @@ body {
 }
 
 .card{
+    position: relative;
     padding: 2rem;
     overflow: hidden;
     animation: slidein 1.5s ease-out forwards;
@@ -225,6 +236,7 @@ body {
 }
 
 .card{
+    position: relative;
     padding: 1rem;
     overflow: hidden;
     animation: slidein 1.5s ease-out forwards;
@@ -244,8 +256,49 @@ body {
         opacity: 1;
     }  
 
+
+
     
 }
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure image fills the space nicely */
+  transition: transform 0.4s ease; /* Smooth animation on hover */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Zooms in the image on hover */
+}
+
+.overlay {
+  position: absolute; /* Position it on top of the image */
+  top: 10px;
+  right: 10px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Fade in smoothly */
+}
+
+.overlay a {
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black bg */
+  padding: 6px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+
+
+.card:hover .overlay {
+  opacity: 1; /* Make the icon visible when you hover */
+}
+
 
     
     
@@ -264,6 +317,7 @@ body {
 }
 
 .card{
+    position: relative;
     padding: 1rem;
     overflow: hidden;
     animation: slidein 1.5s ease-out forwards;
@@ -283,13 +337,94 @@ body {
         transform: translateX(0);
         opacity: 1;
     }  
+    
 
     
 }
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure image fills the space nicely */
+  transition: transform 0.4s ease; /* Smooth animation on hover */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Zooms in the image on hover */
+}
+.overlay {
+  position: absolute; /* Position it on top of the image */
+  top: 10px;
+  right: 10px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Fade in smoothly */
+}
+
+
+.overlay a {
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black bg */
+  padding: 6px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+
+.card:hover .overlay {
+  opacity: 1; /* Make the icon visible when you hover */
+}
+
+
 
  
     
 }
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure image fills the space nicely */
+  transition: transform 0.4s ease; /* Smooth animation on hover */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Zooms in the image on hover */
+}
+
+.overlay {
+  position: absolute; /* Position it on top of the image */
+  top: 10px;
+  right: 10px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Fade in smoothly */
+}
+
+
+.overlay a {
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black bg */
+  padding: 6px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.card:hover .overlay {
+  opacity: 1; /* Make the icon visible when you hover */
+}
+
+
+
 
 
 
